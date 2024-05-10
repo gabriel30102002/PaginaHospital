@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de imágenes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Massachusetts General Hospital</h1>
+	<div class="contenedor">
+		<header>
+			
+			<nav>
+				<ul>
+					<li><a href="#inicio">Bienvenida</a></li>
+					<li><a href="#seccion1">Nuestros profesionales</a></li>
+					<li><a href="#seccion2">Servicios</a></li>
+					<li><a href="#Videoextra">Reserva una Consulta</a></li>
+                    <li><a href="#acerca-de">Redes sociales</a></li>
+				</ul>
+			</nav>
+		</header>
+
+    <div class="contenedor-carrusel">
+        <div class="carrusel">
+            <div class="slide" style="background-image: url('gettyimages-124c4802141-594x594.jpg')"></div>
+            <div class="slide" style="background-image: url('mass-general-brigham-banner.jpg')"></div>
+            <div class="slide" style="background-image: url('Mass General(crop)_0.png')"></div>
+            <div class="slide" style="background-image: url('careers-mao-700x394.jpg')"></div>
+            <div class="slide" style="background-image: url('a9410e6b636f0ffbf21e55a40e97d7dc.jpg')"></div>
+        </div>
+        <div class="indicadores">
+            <button class="indicador" data-slide="0"></button>
+            <button class="indicador" data-slide="1"></button>
+            <button class="indicador" data-slide="2"></button>
+            <button class="indicador" data-slide="3"></button>
+            <button class="indicador" data-slide="4"></button>
+        </div>
+    </div>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>¡Bienvenido al Hospital Gabrielito!
+                En el Hospital Gabrielito, nuestra misión es proporcionar atención médica de la más alta calidad, 
+                centrada en el paciente y basada en evidencia científica. Con un equipo de profesionales dedicados y 
+                tecnología médica de vanguardia, 
+                nos comprometemos a servir a nuestra comunidad con compasión y excelencia.               
+                Nuestro hospital ofrece una amplia gama de servicios médicos, desde atención de emergencia hasta cuidados intensivos, 
+                cirugía, servicios ambulatorios y atención especializada en diversas áreas,
+                 como cardiología, oncología, neurología y más..</p>
+        </section>
+
+        <section id="seccion1">
+            <h2>Nuestros Profesionales </h2>
+            <p>Somos el numero 1 en experiencias hospitalarias:</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="The-Good-Doctor.jpeg" alt="Imagen 1"></td>
+                           <td><img src="5-scrubs.jpg" alt="Imagen 2"></td>
+                        <td><img src="dr-VGT2DJVTCFHVXA5DCJWF6F7L5Y.avif" alt="Imagen 3">
+                    </tr>
+                    <tr>
+                        <td>Mejor doctor del pais</td>
+                        <td>Equipos capacitados con años de experiencia</td>
+                        <td>Doctor Ganador del nobel Juanito House</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="seccion2">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Análisis de Sangre: Para evaluar la función de órganos como el hígado, riñones y tiroides, 
+                    así como para detectar infecciones o anormalidades en los niveles de glóbulos blancos, rojos y plaquetas.
+                </li>
+
+                <li>Radiografías: Para obtener imágenes detalladas de huesos y tejidos blandos, 
+                    útiles en la detección de fracturas, lesiones o enfermedades pulmonares.</li>
+
+                <li>Ecografías: Para visualizar órganos internos como el corazón, riñones, 
+                    hígado, vesícula biliar y útero mediante ondas sonoras, 
+                    ayudando en el diagnóstico de condiciones como cálculos, tumores o enfermedades ginecológicas.</li>
+
+                <li>Resonancia Magnética (RM): Ofrece imágenes de alta resolución de tejidos blandos y estructuras internas del cuerpo,
+                     siendo especialmente útil en el diagnóstico de lesiones musculoesqueléticas, 
+                    tumores cerebrales, enfermedades de la médula espinal y trastornos articulares.</li>
+            </ul>           
+        </section>
+
+        <section id="Videoextra">
+            <h2>Formulario</h2>
+            <p>Reservacion de citas</p>
+            <form action="procesar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+           
+        </section>
+
+        <section id="acerca-de">
+            <h2>Redes Sociales</h2>
+            <p>Encuentranos aqui:.</p>
+            <div class="imagenes">
+                <a href="https://www.instagram.com/massgeneral/?hl=es"><img src="fondo-instagram-colores-degradados_23-2147823814.avif" alt="Descripción de la imagen 1"></a>
+                <a href="https://www.facebook.com/MassGeneralInternational/?brand_redir=45109099879&locale=es_LA"><img src="youtube-logo-youtube-icon-transparent-free-png.webp" alt="Descripción de la imagen 2"></a>
+                <a href="https://www.youtube.com/watch?v=7MZu9Mq521c"><img src="124010.png" alt="Descripción de la imagen 3"></a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
